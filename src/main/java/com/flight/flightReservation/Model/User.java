@@ -2,60 +2,60 @@ package com.flight.flightReservation.Model;
 
 public class User {
 
-    int Id;
-    String FirstName;
-    String LastName;
-    String Email;
-    String Password;
+   private int id;
+   private String firstName;
+   private String lastName;
+   private String email;
+   private String password;
 
     public User() {
     }
 
     public User(int id, String firstName, String lastName, String email, String password) {
-        Id = id;
-        FirstName = firstName;
-        LastName = lastName;
-        Email = email;
-        Password = password;
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
     }
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        this.password = password;
     }
 }

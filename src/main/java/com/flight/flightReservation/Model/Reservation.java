@@ -1,30 +1,21 @@
 package com.flight.flightReservation.Model;
 
+
+import javax.persistence.*;
+
+@Entity
 public class Reservation {
-    private Long id;
+
+
     private Boolean checkedIn;
     private int numberOfBags;
+    @OneToOne
     private Passenger passenger;
+    @OneToOne
     private Flight flight;
 
-    public Reservation() {
-    }
 
-    public Reservation(Long id, Boolean checkedIn, int numberOfBags, Passenger passenger, Flight flight) {
-        this.id = id;
-        this.checkedIn = checkedIn;
-        this.numberOfBags = numberOfBags;
-        this.passenger = passenger;
-        this.flight = flight;
-    }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Boolean getCheckedIn() {
         return checkedIn;

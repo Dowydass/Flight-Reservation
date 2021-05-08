@@ -1,10 +1,13 @@
 package com.flight.flightReservation.Model;
 
+import javax.persistence.Entity;
 import java.sql.Timestamp;
 
-public class Flight {
 
-    private Long id;
+@Entity
+public class Flight extends AbstractEntity{
+
+
     private String flightNumber;
     private String operatingAirlines;
     private String departureCity;
@@ -13,26 +16,8 @@ public class Flight {
     private Timestamp estimatedDepartureTime;
 
 
-    public Flight() {
-    }
 
-    public Flight(Long id, String flightNumber, String operatingAirlines, String departureCity, String arrivalCity, String dateOfDeparture, Timestamp estimatedDepartureTime) {
-        this.id = id;
-        this.flightNumber = flightNumber;
-        this.operatingAirlines = operatingAirlines;
-        this.departureCity = departureCity;
-        this.arrivalCity = arrivalCity;
-        this.dateOfDeparture = dateOfDeparture;
-        this.estimatedDepartureTime = estimatedDepartureTime;
-    }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getFlightNumber() {
         return flightNumber;

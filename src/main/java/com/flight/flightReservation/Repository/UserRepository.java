@@ -1,6 +1,7 @@
-package com.flight.flightReservation.Controller;
+package com.flight.flightReservation.Repository;
 
-import org.apache.tomcat.jni.User;
+
+import com.flight.flightReservation.Model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

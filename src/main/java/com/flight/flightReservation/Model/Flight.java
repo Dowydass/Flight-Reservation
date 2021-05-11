@@ -1,18 +1,26 @@
 package com.flight.flightReservation.Model;
 
-import javax.persistence.Entity;
+
+import javax.persistence.*;
+
 import java.sql.Timestamp;
 
 
 @Entity
+@Table(name ="Flight")
 public class Flight extends AbstractEntity{
 
-
+    @Column(name = "Flight_Number")
     private String flightNumber;
+    @Column(name = "Operating_Airlines")
     private String operatingAirlines;
+    @Column(name = "Departure_City")
     private String departureCity;
+    @Column(name = "Arrival_City")
     private String  arrivalCity;
+    @Column(name = "Date_Of_Departure")
     private String dateOfDeparture;
+    @Column(name = "Estimated_Departure_Time")
     private Timestamp estimatedDepartureTime;
 
 

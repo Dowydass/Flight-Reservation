@@ -4,7 +4,7 @@ package com.flight.flightReservation.Model;
 import javax.persistence.*;
 
 @Entity
-public class Reservation {
+public class Reservation extends AbstractEntity{
 
 
     private Boolean checkedIn;

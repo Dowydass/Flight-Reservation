@@ -1,4 +1,4 @@
-package com.flight.flightReservation.Controller;
+package com.flight.flightReservation.Repository;
 
 import com.flight.flightReservation.Model.Reservation;
 

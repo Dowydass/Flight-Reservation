@@ -15,16 +15,16 @@
     <title>Register</title>
 </head>
 <body>
-<form action="register" method="POST">
+<form action="registerUser" method="post">
     <pre>
-    First Name:       <input type="text" name="fistName"/>
-    Last Name:        <input type="text" name="lastName"/>
+        <h2>Registration</h2>
+    First Name:       <input type="text" name="name"/>
+    Last Name:        <input type="text" name="surname"/>
     Email:            <input type="text" name="email"/>
     Password:         <input type="password" name="password"/>
     Confirm Password: <input type="password" name="confirmPassword"/>
     <input type="submit" value="register"/>
     </pre>
 </form>
-
 </body>
 </html>

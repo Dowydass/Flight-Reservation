@@ -4,6 +4,7 @@ package com.flight.flightReservation.Model;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "reservation")
 public class Reservation extends AbstractEntity{
 
 

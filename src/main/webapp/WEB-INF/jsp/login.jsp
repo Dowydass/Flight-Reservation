@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Dovyd
+  User: DovydasIT
   Date: 5/10/2021
   Time: 1:17 AM
   To change this template use File | Settings | File Templates.
@@ -16,6 +16,7 @@
             User name: <input type="text" name="email"/>
             Password:  <input type="text" name="password"/>
             <input type="submit" value="login"/>
+            ${msg}
         </pre>
     </form>
 </body>

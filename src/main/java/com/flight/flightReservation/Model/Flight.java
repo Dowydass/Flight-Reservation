@@ -4,23 +4,26 @@ package com.flight.flightReservation.Model;
 import javax.persistence.*;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 
 @Entity
-@Table(name ="Flight")
+@Table(name ="flight")
 public class Flight extends AbstractEntity{
 
-    @Column(name = "Flight_Number")
+    @Column(name = "Flight_Number", nullable = false)
     private String flightNumber;
-    @Column(name = "Operating_Airlines")
+   @Column(name = "Operating_Airlines", nullable = false)
     private String operatingAirlines;
-    @Column(name = "Departure_City")
+   @Column(name = "Departure_City", nullable = false)
     private String departureCity;
-    @Column(name = "Arrival_City")
+   @Column(name = "Arrival_City", nullable = false)
     private String  arrivalCity;
-    @Column(name = "Date_Of_Departure")
-    private String dateOfDeparture;
-    @Column(name = "Estimated_Departure_Time")
+   @Column(name = "Date_Of_Departure", nullable = false, columnDefinition = "DATE")
+    private Date dateOfDeparture;
+
+
+   @Column(name = "Estimated_Departure_Time", nullable = false,  columnDefinition = "timestamp")
     private Timestamp estimatedDepartureTime;
 
 
@@ -59,11 +62,11 @@ public class Flight extends AbstractEntity{
         this.arrivalCity = arrivalCity;
     }
 
-    public String getDateOfDeparture() {
+    public Date getDateOfDeparture() {
         return dateOfDeparture;
     }
 
-    public void setDateOfDeparture(String dateOfDeparture) {
+    public void setDateOfDeparture(Date dateOfDeparture) {
         this.dateOfDeparture = dateOfDeparture;
     }
 

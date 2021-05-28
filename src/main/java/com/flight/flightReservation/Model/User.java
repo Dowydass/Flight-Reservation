@@ -16,6 +16,8 @@ public class User extends AbstractEntity {
 
     private String password;
 
+
+
     public String getSurname() {
         return surname;
     }
@@ -23,7 +25,6 @@ public class User extends AbstractEntity {
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
 
     public String getName() {
         return name;

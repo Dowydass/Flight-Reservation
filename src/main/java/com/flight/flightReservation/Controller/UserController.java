@@ -22,21 +22,13 @@ public class UserController {
     @Autowired
    private UserRepository userRepository;
 
-    public static void getTime(){
-        Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-        System.out.print(formatter.format(calendar.getTime()));
-    }
 
     @RequestMapping("/register")
     public String showRegistrationPage() {
         return "register";
     }
 
-    @RequestMapping("/login")
-    public String showLoginPage(){
-        return "login";
-    }
+
 
     @RequestMapping(value = "registerUser", method = RequestMethod.POST)
     public String register(@ModelAttribute("user") User user) {
@@ -44,6 +36,12 @@ public class UserController {
         userRepository.save(user);
         return "login";
     }
+
+    @RequestMapping("/login")
+    public String showLoginPage() {
+        return "login";
+    }
+
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login(@RequestParam("email") String email,@RequestParam("password") String password, ModelMap modelMap){

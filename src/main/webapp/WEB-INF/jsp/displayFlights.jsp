@@ -11,15 +11,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Flight list</title>
+    <title>Skrydžių sąrašas</title>
 </head>
 <body>
-<h2>Flights:</h2>
+<h2>
+    Skrydžiai:</h2>
 <table>
-    <tr><th>Airlines</th>
-        <th>Departure City</th>
-        <th>Arrival City</th>
-        <th>Departure Time</th></tr>
+    <tr><th>aviakompanijos</th>
+        <th>išvykimo miestas</th>
+        <th>Atvykimo miestas</th>
+        <th>Išvykimo laikas</th></tr>
 
 <c:forEach items="${flights}" var = "flight">
 <tr>
@@ -27,7 +28,7 @@
     <td>${flight.departureCity}</td>
     <td>${flight.arrivalCity}</td>
     <td>${flight.estimatedDepartureTime}</td>
-    <td><a href="showCompleteReservation?flightId=${flight.id}">Select</a> </td>
+    <td><a href="showCompleteReservation?flightId=${flight.id}">Pasirinkti</a> </td>
 </tr>
 
 

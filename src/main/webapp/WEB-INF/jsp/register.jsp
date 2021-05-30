@@ -12,18 +12,18 @@
 
 <html>
 <head>
-    <title>Register</title>
+    <title>Registracija</title>
 </head>
 <body>
 <form action="registerUser" method="post">
     <pre>
-        <h2>Registration</h2>
-    First Name:       <input type="text" name="name"/>
-    Last Name:        <input type="text" name="surname"/>
-    Email:            <input type="text" name="email"/>
-    Password:         <input type="password" name="password"/>
-    Confirm Password: <input type="password" name="confirmPassword"/>
-    <input type="submit" value="register"/>
+        <h2>Vartotojo Registracija</h2>
+    Vardas:                   <input type="text" name="name"/>
+    Pavardė:                  <input type="text" name="surname"/>
+    El. Paštas:               <input type="text" name="email"/>
+    Slaptažodis:              <input type="password" name="password"/>
+    Patvirtinti slaptažodį:   <input type="password" name="confirmPassword"/>
+    <input type="submit" value="Registruotis"/>
     </pre>
 </form>
 </body>

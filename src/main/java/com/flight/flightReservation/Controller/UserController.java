@@ -27,9 +27,7 @@ public class UserController {
 
 
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 
-    @Autowired
     private BCryptPasswordEncoder encoder;
 
     @RequestMapping("/register")
@@ -41,7 +39,7 @@ public class UserController {
 
     @RequestMapping(value = "registerUser", method = RequestMethod.POST)
     public String register(@ModelAttribute("user") User user) {
-       user.setPassword(encoder.encode(user.getPassword()));
+
         userRepository.save(user);
         return "login";
     }

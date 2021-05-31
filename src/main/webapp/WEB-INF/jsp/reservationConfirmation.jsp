@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Reservation Confirmation</title>
+    <title>Rezervacijos patvirtinimas</title>
 </head>
 <body>
 ${msg}
